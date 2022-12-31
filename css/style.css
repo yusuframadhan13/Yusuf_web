@@ -38,10 +38,8 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.856),rgba(255, 255, 255, 0.877)),url(/image/sekolah.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100%;
+    min-height: 610px;
     height: 100vh;
 }
 
