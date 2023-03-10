@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@492&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/logo-title.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+       
+        .hero {
+            float: left;
+            background-color: rgb(255, 255, 255);
+            min-height: 85px;
+          
+        }
+
+        nav {
+            background-color: white;
+        }
+
+        #konten_modelviewer {
+            float: left;
+            width: 100%;
+           
+            
+        }
+
+        
+        model-viewer{
+           float: left;
+            width: 800px;
+            height: 600px;
+          
+            
+        }
+      
+        @media (max-width: 720px){
+            model-viewer{
+           float: left;
+            width: 100%;
+            height: 600px;
+          
+           
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <nav>
+            <label class="logo"><img src="image/logo-2.png"/></label>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="view.html">3d object</i></a></li>
+                <li><a href="https://www.instagram.com/yusuframadhan.aja/?next=%2F">Instagram</i></a></li>
+                <li><a href="#">Email</i></a></li>
+                <li><a href="#link-sertifikat">Certificate</i></a></li>
+            <a href="#link-formContact"><button>My contact</button></a>
+            </ul>
+
+            <div id="content-menu">
+                <input type="checkbox" onclick="Fcheck_nav()" id="check_nav">
+                <i class="material-icons" style="font-size:36px" id="menu">menu</i>
+                <span class='material-icons' style="font-size:36px" id="close-menu">close</span>
+            </div>
+        </nav>
+       
+    </section>
+   
+    <div id="konten_modelviewer">
+        <model-viewer src="view glb/room gaming.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0" min-camera-orbit="auto auto 14.13m" min-field-of-view="12deg" environment-image="legacy" exposure="0.28" shadow-softness="0"></model-viewer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</body>
+</html>
